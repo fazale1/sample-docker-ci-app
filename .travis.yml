@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t fazale1/sample-docker-ci-app -f Dockerfile.dev .
+  - docker build -t fazale/sample-docker-ci-app -f Dockerfile.dev .
 
 # script:
 #   - docker run -e CI=true stephengrider/docker-react npm run test
