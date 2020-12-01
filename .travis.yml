@@ -10,14 +10,14 @@ before_install:
 # script:
 #   - docker run -e CI=true fazale/sample-docker-ci-app npm run test
 
-# deploy:
-#   provider: elasticbeanstalk
-#   region: 'us-east-1'
-#   app: 'docker'
-#   env: 'docker-env'
-#   bucket_name: 'elasticbeanstalk-us-east-1-923445559289'
-#   bucket_path: 'docker'
-#   on:
-#     branch: master
-#   access_key_id: $AWS_ACCESS_KEY
-#   secret_access_key: $AWS_SECRET_KEY
+deploy:
+  provider: elasticbeanstalk
+  region: 'us-east-1'
+  app: 'docker-react'
+  env: 'DockerReact-env'
+  bucket_name: 'elasticbeanstalk-us-east-1-675359431836'
+  bucket_path: 'docker-react'
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
